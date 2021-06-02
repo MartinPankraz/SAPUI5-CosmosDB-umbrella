@@ -10,7 +10,7 @@ SAPUI5 application visualizing SFlight data set living in Azure CosmosDB via ODa
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Floorplan Used**<br>3worklistodatav4|
 |**Service Type**<br>OData Url|
-|**Service URL**<br>https://sap-cosmos-global.azurefd.net/odata/
+|**Service URL**<br>https://[your front door domain].azurefd.net/odata/
 |**Module Name**<br>odata-shim-example|
 |**Application Title**<br>Odata Shim Example|
 |**Namespace**<br>azure.odata.cosmos.example|
