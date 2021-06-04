@@ -36,6 +36,17 @@ sap.ui.define([
 			});
 			this.setModel(oViewModel, "worklistView");
 
+            $.ajax({
+				type : 'GET',
+				url: "/geode",
+		        success: function(data){
+		        	console.log("success "+JSON.stringify(data));
+		        },
+		        error:function(data){
+		        	console.log("error "+JSON.stringify(data));
+		        }
+			});            
+            
 		},
 
 		/* =========================================================== */

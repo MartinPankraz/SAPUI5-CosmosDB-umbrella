@@ -24,6 +24,7 @@ server:
       backend:
       - path: /odata
         url: https://sap-cosmos-global.azurefd.net
+        destination: AzureCosmosDB
   - name: sap-fe-mockserver
     beforeMiddleware: fiori-tools-proxy
     configuration:

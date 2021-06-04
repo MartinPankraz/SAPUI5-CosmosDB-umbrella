@@ -12,6 +12,7 @@ server:
       backend:
       - path: /odata
         url: https://sap-cosmos-global.azurefd.net
+        destination: AzureCosmosDB
       ui5:
         path: 
         - /resources
