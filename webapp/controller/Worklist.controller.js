@@ -39,7 +39,7 @@ sap.ui.define([
 
             $.ajax({
 				type : 'GET',
-				url: "/api/geode",
+				url: "./api/geode",
 		        success: function(data){
                     var currentText = that.getView().byId("myTitle").getText();
 		        	that.getView().byId("myTitle").setText(currentText + " (served from " + data + ")");
