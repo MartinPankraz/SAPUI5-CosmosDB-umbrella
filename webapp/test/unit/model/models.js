@@ -1,5 +1,5 @@
 sap.ui.define([
-	"azure/odata/cosmos/example/odatashimexample/model/models",
+	"azure/odata/cosmos/example/cosmosumbrella/model/models",
 	"sap/ui/Device"
 ], function (models, Device) {
 	"use strict";

@@ -11,8 +11,8 @@
                 <Property Name="connid" Type="Edm.String" />
                 <Property Name="fldate" Type="Edm.String" />
                 <Property Name="planetype" Type="Edm.String" />
-                <Property Name="seatsmax" Type="Edm.Int32" Nullable="false" />
-                <Property Name="seatsocc" Type="Edm.Int32" Nullable="false" />
+                <Property Name="seatsmax" Type="Edm.Int32" />
+                <Property Name="seatsocc" Type="Edm.Int32" />
             </EntityType>
         </Schema>
         <Schema Namespace="Default" xmlns="http://docs.oasis-open.org/odata/ns/edm">

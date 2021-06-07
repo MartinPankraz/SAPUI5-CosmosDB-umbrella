@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="azure.odata.cosmos.example.odatashimexample.controller.App"
+	controllerName="azure.odata.cosmos.example.cosmosumbrella.controller.App"
 	displayBlock="true"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">

@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (UIComponent, Device, models, ErrorHandler) {
 	"use strict";
 
-	return UIComponent.extend("azure.odata.cosmos.example.odatashimexample.Component", {
+	return UIComponent.extend("azure.odata.cosmos.example.cosmosumbrella.Component", {
 
 		metadata : {
 			manifest: "json"

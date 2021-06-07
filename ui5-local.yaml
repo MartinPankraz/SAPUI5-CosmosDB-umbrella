@@ -1,6 +1,6 @@
 specVersion: '2.0'
 metadata:
-  name: 'odata-shim-example'
+  name: 'cosmos-umbrella'
 type: application
 framework:
   name: SAPUI5
@@ -22,14 +22,13 @@ server:
     configuration:
       ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
       backend:
-      - path: /odata
+      - path: /api
         url: https://sap-cosmos-global.azurefd.net
-        destination: AzureCosmosDB
   - name: sap-fe-mockserver
     beforeMiddleware: fiori-tools-proxy
     configuration:
       service:
-        urlBasePath: /odata
+        urlBasePath: /api/odata
         name: ''
         metadataXmlPath: ./webapp/localService/metadata.xml
         mockdataRootPath: ./webapp/localService/mockdata

@@ -2,12 +2,11 @@ sap.ui.define([
 	"./BaseController",
 	"sap/ui/model/json/JSONModel",
 	"sap/ui/core/routing/History",
-	"../model/formatter",
-    "sap/m/MessageBox"
-], function (BaseController, JSONModel, History, formatter, MessageBox) {
+	"../model/formatter"
+], function (BaseController, JSONModel, History, formatter) {
 	"use strict";
 
-	return BaseController.extend("azure.odata.cosmos.example.odatashimexample.controller.Object", {
+	return BaseController.extend("azure.odata.cosmos.example.cosmosumbrella.controller.Object", {
 
 		formatter: formatter,
 
@@ -32,11 +31,7 @@ sap.ui.define([
 		},
 		/* =========================================================== */
 		/* event handlers                                              */
-        /* =========================================================== */
-        /*onDelete : function (oEvent) {
-            this.getRouter().navTo("worklist", {}, true);
-            oEvent.getSource().getBindingContext().delete();
-        },*/
+		/* =========================================================== */
 
         onEdit : function (oEvent) {
             var enabledState = this.getView().byId("item_carrid").getEnabled();

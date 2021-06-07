@@ -1,0 +1,94 @@
+_schema-version: "3.2"
+ID: azure-odata-cosmos-example-cosmosumbrella
+description: A UI5 application to consume data from CosmosDB via OData
+version: 0.0.1
+modules:
+- name: azure-odata-cosmos-example-cosmosumbr-dest-content
+  type: com.sap.application.content
+  requires:
+  - name: azure-odata-cosmos-example-cosmosumbrell-dest-srv
+    parameters:
+      content-target: true
+  - name: azure-odata-cosmos-example-cosmosumb-repo-host
+    parameters:
+      service-key:
+        name: azure-odata-cosmos-example-cosmosumb-repo-host-key
+  - name: azure-odata-cosmos-example-cosmosumbrella-uaa
+    parameters:
+      service-key:
+        name: azure-odata-cosmos-example-cosmosumbrella-uaa-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: azure-odata-cosmos-example-cosmosumbrell_repo_host
+          ServiceInstanceName: azure-odata-cosmos-example-cosmosumbrell-html5-srv
+          ServiceKeyName: azure-odata-cosmos-example-cosmosumb-repo-host-key
+          sap.cloud.service: azure-odata-cosmos-example-cosmosumbrella
+        - Authentication: OAuth2UserTokenExchange
+          Name: azure-odata-cosmos-example-cosmosumbrella_uaa
+          ServiceInstanceName: azure-odata-cosmos-example-cosmosumbrell-xsuaa-srv
+          ServiceKeyName: azure-odata-cosmos-example-cosmosumbrella-uaa-key
+          sap.cloud.service: azure-odata-cosmos-example-cosmosumbrella
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: azure-odata-cosmos-example-cosmosumbre-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: azure-odata-cosmos-example-cosmosumb-repo-host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - azureodatacosmosexamplecosmosumbrella.zip
+      name: azureodatacosmosexamplecosmosumbrella
+      target-path: resources/
+- name: azureodatacosmosexamplecosmosumbrella
+  type: html5
+  path: .
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: azure-odata-cosmos-example-cosmosumbrell-dest-srv
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: azure-odata-cosmos-example-cosmosumbrell-dest-srv
+    service-plan: lite
+- name: azure-odata-cosmos-example-cosmosumbrella-uaa
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: azure-odata-cosmos-example-cosmosumbrell-xsuaa-srv
+    service-plan: application
+- name: azure-odata-cosmos-example-cosmosumb-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: azure-odata-cosmos-example-cosmosumbrell-html5-srv
+    service-plan: app-host
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true

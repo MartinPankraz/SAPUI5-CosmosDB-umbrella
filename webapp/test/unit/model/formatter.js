@@ -1,5 +1,5 @@
 sap.ui.define([
-"azure/odata/cosmos/example/odatashimexample/model/formatter"
+"azure/odata/cosmos/example/cosmosumbrella/model/formatter"
 ], function (formatter) {
 	"use strict";
 

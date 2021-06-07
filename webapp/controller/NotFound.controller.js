@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (BaseController) {
 	"use strict";
 
-	return BaseController.extend("azure.odata.cosmos.example.odatashimexample.controller.NotFound", {
+	return BaseController.extend("azure.odata.cosmos.example.cosmosumbrella.controller.NotFound", {
 
 		/**
 		 * Navigates to the worklist when the link is pressed

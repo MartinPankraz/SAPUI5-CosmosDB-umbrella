@@ -3,12 +3,12 @@ sap.ui.define([
 	"sap/ui/model/json/JSONModel",
 	"../model/formatter",
 	"sap/ui/model/Filter",
-    "sap/ui/model/FilterOperator",
+	"sap/ui/model/FilterOperator",
     "sap/m/MessageBox"
 ], function (BaseController, JSONModel, formatter, Filter, FilterOperator, MessageBox) {
 	"use strict";
 
-	return BaseController.extend("azure.odata.cosmos.example.odatashimexample.controller.Worklist", {
+	return BaseController.extend("azure.odata.cosmos.example.cosmosumbrella.controller.Worklist", {
 
 		formatter: formatter,
 
@@ -21,8 +21,9 @@ sap.ui.define([
 		 * @public
 		 */
 		onInit : function () {
-			var oViewModel;
+            var oViewModel;
             var that = this;
+
 			// keeps the search state
 			this._aTableSearchState = [];
 
@@ -46,8 +47,7 @@ sap.ui.define([
 		        error:function(data){
 		        	console.log("error "+JSON.stringify(data));
 		        }
-			});            
-            
+			});
 		},
 
 		/* =========================================================== */
@@ -84,7 +84,7 @@ sap.ui.define([
 		 * @public
 		 */
 		onPress : function (oEvent) {
-            // The source is the list item that got pressed
+			// The source is the list item that got pressed
 			this._showObject(oEvent.getSource());
 		},
 
@@ -177,11 +177,11 @@ sap.ui.define([
 
         _getDialog : function () {
             if (!this._oDialog) {
-                this._oDialog = sap.ui.xmlfragment(this.getView().getId(),"azure.odata.cosmos.example.odatashimexample.view.AddDialog", this);
+                this._oDialog = sap.ui.xmlfragment(this.getView().getId(),"azure.odata.cosmos.example.cosmosumbrella.view.AddDialog", this);
                 this.getView().addDependent(this._oDialog);
             }
             return this._oDialog;
-        },      
+        }, 
 
 		/**
 		 * Shows the selected item on the object page

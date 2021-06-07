@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (BaseController) {
 	"use strict";
 
-	return BaseController.extend("azure.odata.cosmos.example.odatashimexample.controller.App", {
+	return BaseController.extend("azure.odata.cosmos.example.cosmosumbrella.controller.App", {
 
 		onInit : function () {
 			// apply content density mode to root view

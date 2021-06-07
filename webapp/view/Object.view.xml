@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="azure.odata.cosmos.example.odatashimexample.controller.Object"
+	controllerName="azure.odata.cosmos.example.cosmosumbrella.controller.Object"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:semantic="sap.f.semantic">
@@ -81,13 +81,14 @@
             </List>
 		</semantic:content>
 
-        <!--<semantic:deleteAction>
-			<semantic:DeleteAction press="onDelete"/>
-		</semantic:deleteAction>-->
-
         <semantic:editAction>
 			<semantic:EditAction press="onEdit" />
 		</semantic:editAction>
+
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
+		</semantic:sendEmailAction>
+
 
 	</semantic:SemanticPage>
 

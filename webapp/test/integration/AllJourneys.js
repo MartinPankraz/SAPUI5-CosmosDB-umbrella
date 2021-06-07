@@ -7,7 +7,7 @@ sap.ui.define([
 	"use strict";
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "azure.odata.cosmos.example.odatashimexample.view."
+		viewNamespace: "azure.odata.cosmos.example.cosmosumbrella.view."
 	});
 
 });

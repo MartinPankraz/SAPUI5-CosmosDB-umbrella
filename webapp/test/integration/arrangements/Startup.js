@@ -3,7 +3,7 @@ sap.ui.define([
 ], function(Opa5) {
 "use strict";
 
-return Opa5.extend("azure.odata.cosmos.example.odatashimexample.test.integration.arrangements.Startup", {
+return Opa5.extend("azure.odata.cosmos.example.cosmosumbrella.test.integration.arrangements.Startup", {
 
 		/**
 		  * Initializes mock server, then starts the app component
@@ -21,7 +21,7 @@ return Opa5.extend("azure.odata.cosmos.example.odatashimexample.test.integration
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "azure.odata.cosmos.example.odatashimexample",
+					name: "azure.odata.cosmos.example.cosmosumbrella",
 					async: true
 				},
 				hash: oOptions.hash,

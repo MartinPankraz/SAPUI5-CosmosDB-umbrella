@@ -1,26 +1,23 @@
-# SAPUI5-CosmosDB-umbrella
-SAPUI5 application visualizing SFlight data set living in Azure CosmosDB via OData shim running on Azure App service.
-
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Thu May 20 2021 09:25:51 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Mon Jun 07 2021 12:40:58 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori|
-|**App Generator Version**<br>1.1.10|
+|**App Generator Version**<br>1.2.0|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Floorplan Used**<br>3worklistodatav4|
 |**Service Type**<br>OData Url|
-|**Service URL**<br>https://[your front door domain].azurefd.net/odata/
-|**Module Name**<br>odata-shim-example|
-|**Application Title**<br>Odata Shim Example|
+|**Service URL**<br>https://sap-cosmos-global.azurefd.net/api/odata
+|**Module Name**<br>cosmos-umbrella|
+|**Application Title**<br>SAPUI5-CosmosDB-umbrella|
 |**Namespace**<br>azure.odata.cosmos.example|
 |**UI5 Theme**<br>sap_fiori_3|
 |**UI5 Version**<br>Latest|
 |**Enable Telemetry**<br>True|
 
-## odata-shim-example
+## cosmos-umbrella
 
-A Fiori application.
+A UI5 application to consume data from CosmosDB via OData
 
 ### Starting the generated app
 
@@ -35,7 +32,6 @@ A Fiori application.
 ```
     npm run start-mock
 ```
-    
 
 #### Pre-requisites:
 

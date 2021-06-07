@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Model) {
 	"use strict";
 
-	return Model.extend("azure.odata.cosmos.example.odatashimexample.test.unit.helper.FakeI18nModel", {
+	return Model.extend("azure.odata.cosmos.example.cosmosumbrella.test.unit.helper.FakeI18nModel", {
 
 		constructor : function (mTexts) {
 			Model.call(this);

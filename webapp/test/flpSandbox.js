@@ -39,8 +39,8 @@ sap.ui.define([
 							"tiles": [{
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
-									"title": "Odata Shim Example",
-									"targetURL": "#OdataShimExample-display"
+									"title": "SAPUI5-CosmosDB-umbrella",
+									"targetURL": "#SAPUI5CosmosDBumbrella-display"
 								}
 							}]
 						}]
@@ -51,18 +51,18 @@ sap.ui.define([
 				"adapter": {
 					"config": {
 						"inbounds": {
-							"OdataShimExample-display": {
-								"semanticObject": "OdataShimExample",
+							"SAPUI5CosmosDBumbrella-display": {
+								"semanticObject": "SAPUI5CosmosDBumbrella",
 								"action": "display",
-								"description": "A Fiori application.",
-								"title": "Odata Shim Example",
+								"description": "A UI5 application to consume data from CosmosDB via OData",
+								"title": "SAPUI5-CosmosDB-umbrella",
 								"signature": {
 									"parameters": {}
 								},
 								"resolutionResult": {
 									"applicationType": "SAPUI5",
-									"additionalInformation": "SAPUI5.Component=azure.odata.cosmos.example.odatashimexample",
-									"url": sap.ui.require.toUrl("azure/odata/cosmos/example/odatashimexample")
+									"additionalInformation": "SAPUI5.Component=azure.odata.cosmos.example.cosmosumbrella",
+									"url": sap.ui.require.toUrl("azure/odata/cosmos/example/cosmosumbrella")
 								}
 							}
 						}

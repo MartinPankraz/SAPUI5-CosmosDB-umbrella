@@ -8,7 +8,7 @@ sap.ui.define([
 	// shortcut for sap.m.URLHelper
 	var URLHelper = mobileLibrary.URLHelper;
 
-	return Controller.extend("azure.odata.cosmos.example.odatashimexample.controller.BaseController", {
+	return Controller.extend("azure.odata.cosmos.example.cosmosumbrella.controller.BaseController", {
 		/**
 		 * Convenience method for accessing the router.
 		 * @public

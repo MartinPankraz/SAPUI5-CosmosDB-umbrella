@@ -1,8 +1,7 @@
 <mvc:View
-	controllerName="azure.odata.cosmos.example.odatashimexample.controller.Worklist"
+	controllerName="azure.odata.cosmos.example.cosmosumbrella.controller.Worklist"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
-    xmlns:core="sap.ui.core"
 	xmlns:semantic="sap.f.semantic">
 
 	<semantic:SemanticPage
