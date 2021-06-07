@@ -22,7 +22,7 @@ sap.ui.define([
 		 */
 		onInit : function () {
 			var oViewModel;
-
+            var that = this;
 			// keeps the search state
 			this._aTableSearchState = [];
 
@@ -38,9 +38,10 @@ sap.ui.define([
 
             $.ajax({
 				type : 'GET',
-				url: "/geode",
+				url: "/api/geode",
 		        success: function(data){
-		        	console.log("success "+JSON.stringify(data));
+                    var currentText = that.getView().byId("myTitle").getText();
+		        	that.getView().byId("myTitle").setText(currentText + " (served from " + data + ")");
 		        },
 		        error:function(data){
 		        	console.log("error "+JSON.stringify(data));

@@ -11,7 +11,7 @@
 		toggleHeaderOnTitleClick="false">
 
 		<semantic:titleHeading>
-			<Title text="{i18n>worklistTitle}" />
+			<Title id="myTitle" text="{i18n>worklistTitle}" />
 		</semantic:titleHeading>
 
 		<semantic:content>
