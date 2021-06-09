@@ -1,3 +1,10 @@
+# cosmos-umbrella
+A UI5 application to consume data from CosmosDB via OData.
+
+Find the OData web api project [here](https://github.com/MartinPankraz/AzCosmosDB-OData-Shim) and the blog post on the SAP community [here]().
+
+Find the public Azure DevOps project for insights on CI/CD [here](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella).
+
 ## Application Details
 |               |
 | ------------- |
@@ -14,11 +21,7 @@
 |**UI5 Theme**<br>sap_fiori_3|
 |**UI5 Version**<br>Latest|
 
-## cosmos-umbrella
-
-A UI5 application to consume data from CosmosDB via OData
-
-### Starting the generated app
+## Starting the generated app
 
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite. In order to launch the generated app, simply right-click the webapp folder -> Preview application -> choose flp for Fiori launchpad env or noflp for Index.html only.
 
