@@ -13,7 +13,6 @@
 |**Namespace**<br>azure.odata.cosmos.example|
 |**UI5 Theme**<br>sap_fiori_3|
 |**UI5 Version**<br>Latest|
-|**Enable Telemetry**<br>True|
 
 ## cosmos-umbrella
 
@@ -21,7 +20,10 @@ A UI5 application to consume data from CosmosDB via OData
 
 ### Starting the generated app
 
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply run the following from the generated app root folder:
+-   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite. In order to launch the generated app, simply right-click the webapp folder -> Preview application -> choose flp for Fiori launchpad env or noflp for Index.html only.
+
+    ![preview wizard](img/BAS-app-startup.png)
+-   Alternatively run the following command from the Terminal from the generated app root folder:
 
 ```
     npm start
@@ -32,9 +34,4 @@ A UI5 application to consume data from CosmosDB via OData
 ```
     npm run start-mock
 ```
-
-#### Pre-requisites:
-
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-
+The preview application option shows the mock commands too
