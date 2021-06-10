@@ -4,7 +4,9 @@ A UI5 application to consume data from CosmosDB via OData.
 Find the OData web api project [here](https://github.com/MartinPankraz/AzCosmosDB-OData-Shim) and the blog post on the SAP community [here]().
 
 Find the public Azure DevOps project for insights on CI/CD [here](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella).
-
+<br><br>
+<img src="img/geode-pattern.png" alt="architecture" width="700"/>
+<br><br>
 ## Application Details
 |               |
 | ------------- |
