@@ -5,7 +5,7 @@ Find the OData web api project [here](https://github.com/MartinPankraz/AzCosmosD
 
 Find the public Azure DevOps project for insights on CI/CD [here](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella).
 
-![geode](images/geode-pattern.png)
+![geode](img/geode-pattern.png)
 
 ## Application Details
 |               |
