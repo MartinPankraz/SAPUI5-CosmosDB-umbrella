@@ -1,9 +1,13 @@
 # cosmos-umbrella
-A UI5 application to consume data from CosmosDB via OData.
+A SAPUI5 freestyle application to consume data from CosmosDB via OData.
 
-Find the OData web api project [here](https://github.com/MartinPankraz/AzCosmosDB-OData-Shim) and the blog post on the SAP community [here](https://blogs.sap.com/2021/06/11/sap-where-can-i-get-toilet-paper-an-implementation-of-the-geodes-pattern-with-s4-btp-and-azure-cosmosdb/).
-
-Find the public Azure DevOps project for insights on CI/CD [here](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella).
+Additional Resources |
+--- |
+[blog on the SAP community](https://blogs.sap.com/2021/06/11/sap-where-can-i-get-toilet-paper-an-implementation-of-the-geodes-pattern-with-s4-btp-and-azure-cosmosdb/) |
+[OData web api project](https://github.com/MartinPankraz/AzCosmosDB-OData-Shim) |
+[SAP CAP app (beta)](https://github.com/MartinPankraz/sap-cap-cosmos-app) |
+[CI/CD pipelines on AzDevOps](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella) |
+<br>
 
 ![geode](img/geode-pattern.png)
 
