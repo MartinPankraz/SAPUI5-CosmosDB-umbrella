@@ -44,3 +44,6 @@ Additional Resources |
     npm run start-mock
 ```
 The preview application option shows the mock commands too
+
+## Additional resoueces
+I found the SAP cloud SDK [docs](https://sap.github.io/cloud-sdk/docs/js/guides/bas-external-system/) useful to understand the destinations setup for SAP BAS to reach FrontDoor and eventually the AppService for OData and CosmosDB.
