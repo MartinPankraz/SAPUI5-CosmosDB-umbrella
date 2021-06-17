@@ -1,4 +1,7 @@
 # cosmos-umbrella
+[![Build status](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella/_apis/build/status/CosmosDB%20OData%20SAP%20umbrella-CI)](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella/_build/latest?definitionId=13)
+[![Build status](https://vsrm.dev.azure.com/mapankra/_apis/public/Release/badge/cf76d14c-d6ac-4c79-90d3-5c289a7b68c2/1/1)](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella/_release/latest?definitionId=1)
+
 A SAPUI5 freestyle application to consume data from CosmosDB via OData.
 
 Additional Resources |
