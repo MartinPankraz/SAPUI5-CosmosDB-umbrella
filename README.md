@@ -8,7 +8,7 @@ Additional Resources |
 --- |
 [blog on the SAP community](https://blogs.sap.com/2021/06/11/sap-where-can-i-get-toilet-paper-an-implementation-of-the-geodes-pattern-with-s4-btp-and-azure-cosmosdb/) |
 [OData web api project](https://github.com/MartinPankraz/AzCosmosDB-OData-Shim) |
-[SAP CAP app (beta)](https://github.com/MartinPankraz/sap-cap-cosmos-app) |
+[SAP CAP app](https://github.com/MartinPankraz/sap-cap-cosmos-app) |
 [CI/CD pipelines on AzDevOps](https://dev.azure.com/mapankra/CosmosDB%20OData%20SAP%20umbrella) |
 <br>
 
